@@ -2,6 +2,8 @@ function [y, exitf] = weight_mix(matrix,f1,f2,f3)
 % Calculate weight of portfolio at time t, given data at time t.
 % Needed 10 days data
     [r,c] = size(matrix);
+    
+    % tuning parameters
     v = 0.7;
     mu = 1;
     rho = 100;
